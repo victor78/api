@@ -24,6 +24,6 @@ An array of score objects
 ### Example
 
 {% highlight bash %}
-$ curl http://api.musescore.com/services/rest/score/583.xml?oauth_consumer_key=musichackday
+$ curl http://api.musescore.com/services/rest/score/583.xml?oauth_consumer_key=your_consumer_key
 < HTTP/1.1 200 OK
 {% endhighlight %}

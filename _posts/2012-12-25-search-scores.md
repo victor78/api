@@ -42,11 +42,11 @@ An array of score objects.
 ### Example
 
 * Piano + Flute
-```http://api.musescore.com/services/rest/score.xml&oauth_consumer_key=musichackday&part=0,73```
+```http://api.musescore.com/services/rest/score.xml&oauth_consumer_key=your_consumer_key&part=0,73```
 
 * Sorted by view count 
-```http://api.musescore.com/services/rest/score.xml&oauth_consumer_key=musichackday&part=0,73&sort=view_count```
+```http://api.musescore.com/services/rest/score.xml&oauth_consumer_key=your_consumer_key&part=0,73&sort=view_count```
 
 * Filtering by licence
-```http://api.musescore.com/services/rest/score.xml&oauth_consumer_key=musichackday&license=to_modify_commercially```
+```http://api.musescore.com/services/rest/score.xml&oauth_consumer_key=your_consumer_key&license=to_modify_commercially```
 

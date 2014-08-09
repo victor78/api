@@ -6,7 +6,7 @@ layout: nil
 
 ### Public resources
 
-A number of resources do not require a user to be a authenticated. Only the application needs a valid Consumer Key.  You can get a Consumer Key by registering your app. Once you have a key, you can pass it as a parameter in a cURL request, or connect to MuseScore.com using just the key.
+A number of resources do not require a user to be a authenticated. Only the application needs a valid Consumer Key.  You can request a Consumer Key via email: <api@musescore.com>. Once you have a key, you can pass it as a parameter in a cURL request, or connect to MuseScore.com using just the key.
 
 Examples:  
 
