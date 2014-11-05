@@ -38,6 +38,6 @@ MuseScore.com API is currently private. If you need an OAuth keypair [let us kno
 
 Function | Endpoint |
 :-----|:-------------------|
-| Request token    | http://api.musescore.com/oauth/request_token |
-| Authorize token  | http://musescore.com/oauth/authorize   |
-| Access token     | http://api.musescore.com/oauth/access_token |
+Get a request token        | http://api.musescore.com/oauth/request_token |
+User authorization page    | http://musescore.com/oauth/authorize   |
+Get an access token        | http://api.musescore.com/oauth/access_token |
