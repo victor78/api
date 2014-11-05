@@ -15,6 +15,7 @@ The user object is represented in XML or in JSON and **`GET`** calls to the Muse
    "name":"Nicolas",
    "permalink":"http:\/\/musescore.com\/nicolas",
    "uri":"http:\/\/api.musescore.com\/services\/rest\/user\/5"
+   "avatar_url":"http:\/\/musescore.com\/files\/imagecache\/avatar-48\/pictures\/picture-1.jpg"
 }
 {% endhighlight %}
 
@@ -29,3 +30,7 @@ The user object is represented in XML or in JSON and **`GET`** calls to the Muse
 
 **`permalink`**
 : Permalink to the user page on MuseScore.com, suitable for human
+
+**`avatar_url`**
+: link to the avatar of the user as displayed on her profile, always 48x48
+

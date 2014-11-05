@@ -9,62 +9,63 @@ The score object is represented in XML or in JSON and **`GET`** calls to the Mus
 ### JSON example
 
 {% highlight json %}
-{
-      "id":"1111",
-      "vid":"152152",
-      "dates":{
-         "posted":"1370593443",
-         "lastupdate":"1370593602"
-      },
-      "secret":"b364acd291",
-      "uri":"http:\/\/api.musescore.com\/services\/rest\/score\/1111",
-      "permalink":"http:\/\/musescore.com\/score\/1111",
-      "user":{
-         "uid":"400",
-         "username":"Mozart"
-      },
-      "status":"ready",
-      "sharing":"public",
-      "comment_count":"0",
-      "favoriting_count":0,
-      "view_count":"14",
-      "playback_count":"6",
-      "download_count":4,
-      "genre":"",
-      "format":"",
-      "license":"all-rights-reserved",
-      "language":null,
-      "title":"Title of my score",
-      "description":"Galactic score",
-      "metadata":{
-         "title":"My First score",
-         "subtitle":null,
-         "composer":"WA Mozart",
-         "poet":null,
-         "pages":"9",
-         "measures":"102",
-         "lyrics":"0",
-         "chordnames":"0",
-         "keysig":"0",
-         "duration":"474",
-         "dimensions":"210x297",
-         "parts":[
-            {
-               "part":{
-                  "name":"Flute",
-                  "program":"73"
-               }
-            },
-            {
-               "part":{
-                  "name":"Piano",
-                  "program":"0"
-               }
+{  
+   "id":"1111",
+   "vid":"152152",
+   "dates":{
+      "posted":"1370593443",
+      "lastupdate":"1370593602"
+   },
+   "secret":"b364acd291",
+   "uri":"http:\/\/api.musescore.com\/services\/rest\/score\/1111",
+   "permalink":"http:\/\/musescore.com\/score\/1111",
+   "user":{
+      "uid":"400",
+      "username":"Mozart"
+   },
+   "status":"ready",
+   "sharing":"public",
+   "comment_count":"2",
+   "favoriting_count":"3",
+   "user_favorite":0,
+   "view_count":"1563",
+   "playback_count":"1295",
+   "download_count":272,
+   "genre":"",
+   "format":"",
+   "license":"publicdomain",
+   "language":null,
+   "title":"Wilder Reiter",
+   "description":"Album f\u00fcr die Jugend (Album for the Young), Op. 68, was composed by Robert Schumann in 1848 for his three daughters. The album consists of a collection of 43 short works. The Wild Rider (Wilder Reiter) in A minor is more commonly known in English as The Wild Horseman.",
+   "metadata":{
+      "title":"My First score",
+      "subtitle":null,
+      "composer":"WA Mozart",
+      "poet":null,
+      "pages":"9",
+      "measures":"102",
+      "lyrics":"0",
+      "chordnames":"0",
+      "keysig":"0",
+      "duration":"474",
+      "dimensions":"210x297",
+      "parts":[
+         {
+            "part":{
+               "name":"Flute",
+               "program":"73"
             }
-         ]
-      }
+         },
+         {
+            "part":{
+               "name":"Piano",
+               "program":"0"
+            }
+         }
+      ]
    }
-  {% endhighlight %}
+}
+{% endhighlight %}
 
 **`id`**
 : The score id, an integer. It's a unique identifier for the score
@@ -104,6 +105,9 @@ The score object is represented in XML or in JSON and **`GET`** calls to the Mus
 
 **`favoriting_count`**
 : Number of users who favorited this score
+
+**`user_favorite`**
+: If a user is authentified, 1 if the scores if favorited. Otherwise 0.
 
 **`view_count`**
 : Number of views for this score
