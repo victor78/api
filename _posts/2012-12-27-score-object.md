@@ -9,28 +9,31 @@ The score object is represented in XML or in JSON and **`GET`** calls to the Mus
 ### JSON example
 
 {% highlight json %}
-{  
+{
    "id":"1111",
    "vid":"152152",
    "dates":{
       "posted":"1370593443",
-      "lastupdate":"1370593602"
+      "lastupdate":"1370593602",
+      "revised":"1370593603"
    },
    "secret":"b364acd291",
-   "uri":"http:\/\/api.musescore.com\/services\/rest\/score\/1111",
-   "permalink":"http:\/\/musescore.com\/score\/1111",
+   "uri":"https:\/\/api.musescore.com\/services\/rest\/score\/1111",
+   "permalink":"https:\/\/musescore.com\/score\/1111",
+   "custom_url":"https://musescore.com\/nicolas\/great-score",
    "user":{
       "uid":"400",
-      "username":"Mozart"
+      "username":"Mozart",
+      "custom_url":"https://musescore.com\/nicolas"
    },
    "status":"ready",
    "sharing":"public",
-   "comment_count":"2",
-   "favoriting_count":"3",
+   "comment_count":"0",
+   "favoriting_count":0,
    "user_favorite":0,
-   "view_count":"1563",
-   "playback_count":"1295",
-   "download_count":272,
+   "view_count":"14",
+   "playback_count":"6",
+   "download_count":4,
    "genre":"",
    "format":"",
    "license":"publicdomain",
@@ -79,6 +82,9 @@ The score object is represented in XML or in JSON and **`GET`** calls to the Mus
 **`lastupdate`**
 : The date when score was last updated. The score file has changed or any metadata such as title.
 
+**`revised`**
+: The date when score file was last updated.
+
 **`secret`**
 : The secret of the score, a unique string
 
@@ -88,11 +94,17 @@ The score object is represented in XML or in JSON and **`GET`** calls to the Mus
 **`permalink`**
 : Permalink to the score page on MuseScore.com, suitable for human
 
+**`custom_url`**
+: the current nice url for the score
+
 **`uid`**
 : The unique identifier of the owner of this score
 
 **`username`**
 : The user screen name of the owner of this score
+
+**`custom_url`**
+: the current nice url for the user
 
 **`status`**
 : The status of the score, currently only "ready" scores are presented through the API
@@ -124,8 +136,11 @@ The score object is represented in XML or in JSON and **`GET`** calls to the Mus
 **`format`**
 :
 
+**`tags`**
+: The tags of the score
+
 **`license`**
-: The license of the score 
+: The license of the score
 * **`all-rights-reserved`**
 * **`publicdomain`**
 * **`cc-zero`**
@@ -137,7 +152,7 @@ The score object is represented in XML or in JSON and **`GET`** calls to the Mus
 * **`cc-by-nc-nd`**
 
 **`language`**
-: Language of the lyrics as provided by the user. It's a [2 letters language code](http://api.drupal.org/api/function/_locale_get_predefined_list/6), null or empty if the user did not provide it
+: Language of the lyrics as provided by the user. It's a [2 letters language code](https://api.drupal.org/api/function/_locale_get_predefined_list/6), null or empty if the user did not provide it
 
 **`title`**
 : Title of the score, as filed by the user when uploading the score. This title can be different from the one in metadata
@@ -162,7 +177,7 @@ Metadata are automatically extracted from the score file
 : The first poet/lyricist text in the score file
 
 **`pages`**
-: The number of pages in the score, when the score is displayed as the user sees it in MuseScore 
+: The number of pages in the score, when the score is displayed as the user sees it in MuseScore
 
 **`measures`**
 : The number of measures in the score
@@ -183,4 +198,4 @@ Metadata are automatically extracted from the score file
 : paper size of the score in mm and formatted **`width`**x**`height`**
 
 **`parts`**
-: An array describing the parts of the score. Each part has a name and a [midi program number](http://en.wikipedia.org/wiki/General_MIDI#Melodic_sounds), zero based indexed.
+: An array describing the parts of the score. Each part has a name and a [midi program number](https://en.wikipedia.org/wiki/General_MIDI#Melodic_sounds), zero based indexed.
