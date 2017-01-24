@@ -36,6 +36,7 @@ The score object is represented in XML or in JSON and **`GET`** calls to the Mus
    "download_count":4,
    "genre":"",
    "format":"",
+   "tags":"tag1, tag2",
    "license":"publicdomain",
    "language":null,
    "title":"Wilder Reiter",
@@ -137,7 +138,7 @@ The score object is represented in XML or in JSON and **`GET`** calls to the Mus
 :
 
 **`tags`**
-: The tags of the score
+: The comma separated list of tags
 
 **`license`**
 : The license of the score

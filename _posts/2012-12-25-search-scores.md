@@ -22,7 +22,7 @@ Name       | Type     | Description |
 **`parts`**    | integer |  the number of parts in the score. 1 for solo scores. 2 for duo etc...  |
 **`language`**           | [2 letters language code](http://api.drupal.org/api/function/_locale_get_predefined_list/6)    |     Lyric language    |
 **`page`**     | integer | Zero based index of the result page. Pages contain 20 results.     |
-**`license`**     | license | *to_modify_commercially*, *to_use_commercially*, *to_share*, *to_play* (default)    |         
+**`license`**     | license | *to_modify_commercially*, *to_use_commercially*, *to_share*, *to_play* (default)    |
 
 #### Sort criteria
 
@@ -42,11 +42,11 @@ An array of score objects.
 ### Example
 
 * Piano + Flute
-```http://api.musescore.com/services/rest/score.xml&oauth_consumer_key=your_consumer_key&part=0,73```
+```http://api.musescore.com/services/rest/score.xml?oauth_consumer_key=your_consumer_key&part=0,73```
 
-* Sorted by view count 
-```http://api.musescore.com/services/rest/score.xml&oauth_consumer_key=your_consumer_key&part=0,73&sort=view_count```
+* Sorted by view count
+```http://api.musescore.com/services/rest/score.xml?oauth_consumer_key=your_consumer_key&part=0,73&sort=view_count```
 
 * Filtering by licence
-```http://api.musescore.com/services/rest/score.xml&oauth_consumer_key=your_consumer_key&license=to_modify_commercially```
+```http://api.musescore.com/services/rest/score.xml?oauth_consumer_key=your_consumer_key&license=to_modify_commercially```
 
