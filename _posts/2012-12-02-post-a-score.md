@@ -1,6 +1,6 @@
 ---
 category: Score
-path: '/score'
+apipath: '/score'
 title: 'Post a score'
 type: 'POST'
 
