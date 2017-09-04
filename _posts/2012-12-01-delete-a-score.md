@@ -1,6 +1,6 @@
 ---
 category: Score
-path: '/score/{id}'
+apipath: '/score/{id}'
 title: 'Delete a score'
 type: 'DELETE'
 

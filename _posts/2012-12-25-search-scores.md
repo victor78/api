@@ -1,6 +1,6 @@
 ---
 category: Score
-path: '/score'
+apipath: '/score'
 title: 'Search scores'
 type: 'GET'
 
