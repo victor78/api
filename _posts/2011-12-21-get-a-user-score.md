@@ -1,6 +1,6 @@
 ---
 category: User
-path: '/user/{id}/score'
+path: '/user/:id/score'
 title: "Search user scores"
 type: 'GET'
 
